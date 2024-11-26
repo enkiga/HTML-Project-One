@@ -11,8 +11,8 @@
 
 <body>
     <!-- Navbar Section -->
-    <nav>
-        <ul>
+    <nav style="background-color: cyan;">
+        <ul style="display: flex; flex-direction: row; gap: 3rem;">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
@@ -23,62 +23,98 @@
 
     <main>
         <!-- About Section -->
-        <section name="about">
-            <h1>
+        <a name="about">
+            <h1 style="color: blue; border-bottom: 1px solid black;">
                 <strong>About Me</strong>
             </h1>
-            <p>Hi, I'm Enoch Garoli. I'm a web developer with a passion for creating beautiful websites. My goal is to
-                create clean, modern and responsive websites that will help you stand out from the crowd.
+            <p>Hi, I'm Enoch Garoli. I'm a web developer with a passion for creating beautiful websites.
+                <br>
+                My goal is to create clean, modern and responsive websites that will help you stand out from the crowd.
             </p>
-        </section>
+
+            <!-- Youtube Video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+
+        </a>
 
         <!-- Work Section -->
-        <section name="work">
-            <h1>
+        <a name="work">
+            <h1 style="color: blue; border-bottom: 1px solid black;">
                 <strong>My Work</strong>
             </h1>
+
             <div>
-                <img src="images/project1.jpg" alt="Project 1">
-                <h2>Project 1</h2>
+                <h2 style="text-decoration: underline;">Project 1</h2>
                 <p>Project 1 Description</p>
+                <img src="images/project1.png" alt="Project 1" style="height: 250px; object-fit: contain;">
             </div>
+
             <div>
-                <img src="images/project2.jpg" alt="Project 2">
-                <h2>Project 2</h2>
+                <h2 style="text-decoration: underline;">Project 2</h2>
                 <p>Project 2 Description</p>
-            </div>
-            <div>
-                <img src="images/project3.jpg" alt="Project 3">
-                <h2>Project 3</h2>
-                <p>Project 3 Description</p>
+                <img src="images/project2.png" alt="Project 2" style="height: 250px; object-fit: contain;">
             </div>
 
-            <!-- Resume Section -->
-            <section name="resume">
-                <h1>
-                    <strong>My Resume</strong>
-                </h1>
-                <p>My Resume will be available soon.</p>
-            </section>
+        </a>
 
-            <!-- Contact Section {To use HTML Forms on this Bit} -->
-            <section name="contact">
-                <h1>
-                    <strong>Contact Me</strong>
-                </h1>
-                <p>Feel free to contact me at </p>
-                <form action="mailto:eenkiga@gmail.com" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </section>
+        <!-- Resume Section -->
+        <a name="resume">
+            <h1 style="color: blue; border-bottom: 1px solid black;">
+                <strong>My Resume</strong>
+            </h1>
+            <!-- A table to show various resume info -->
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black;">Education</th>
+                    <td style="border: 1px solid black;">Bachelor's Degree in Computer Science</td>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black;">Experience</th>
+                    <td style="border: 1px solid black;">2 years of web development experience</td>
+                </tr>
+                <tr>
+                    <th style="border: 1px solid black;">Skills</th>
+                    <td style="border: 1px solid black;">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </a>
 
+        <!-- Contact Section {To use HTML Forms on this Bit} -->
+        <a name="contact">
+            <h1 style="color: blue; border-bottom: 1px solid black;">
+                <strong>Contact Me</strong>
+            </h1>
+            <p>Feel free to contact me at </p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+
+                <button type="submit">Send</button>
+            </form>
+        </a>
     </main>
+
+    <footer style="background-color: aqua;">
+        <p>&copy; 2020 Enoch Garoli</p>
+    </footer>
 </body>
 
 </html>
