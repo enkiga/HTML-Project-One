@@ -1,1 +1,84 @@
- 
+<!-- Initialize HTML  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Name of the Project -->
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- About Section -->
+        <section name="about">
+            <h1>
+                <strong>About Me</strong>
+            </h1>
+            <p>Hi, I'm Enoch Garoli. I'm a web developer with a passion for creating beautiful websites. My goal is to
+                create clean, modern and responsive websites that will help you stand out from the crowd.
+            </p>
+        </section>
+
+        <!-- Work Section -->
+        <section name="work">
+            <h1>
+                <strong>My Work</strong>
+            </h1>
+            <div>
+                <img src="images/project1.jpg" alt="Project 1">
+                <h2>Project 1</h2>
+                <p>Project 1 Description</p>
+            </div>
+            <div>
+                <img src="images/project2.jpg" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>Project 2 Description</p>
+            </div>
+            <div>
+                <img src="images/project3.jpg" alt="Project 3">
+                <h2>Project 3</h2>
+                <p>Project 3 Description</p>
+            </div>
+
+            <!-- Resume Section -->
+            <section name="resume">
+                <h1>
+                    <strong>My Resume</strong>
+                </h1>
+                <p>My Resume will be available soon.</p>
+            </section>
+
+            <!-- Contact Section {To use HTML Forms on this Bit} -->
+            <section name="contact">
+                <h1>
+                    <strong>Contact Me</strong>
+                </h1>
+                <p>Feel free to contact me at </p>
+                <form action="mailto:eenkiga@gmail.com" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+
+    </main>
+</body>
+
+</html>
