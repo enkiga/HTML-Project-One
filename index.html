@@ -16,8 +16,8 @@
             <ul style="display: flex; flex-direction: row; gap: 3rem;">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -30,93 +30,167 @@
             <h1 style="color: blue; border-bottom: 1px solid black;">
                 <strong>About Me</strong>
             </h1>
-            <p>Hi, I'm Enoch Garoli. I'm a web developer with a passion for creating beautiful websites.
+            <h2>Garoli, Garoli Enoch</h2>
+            <p>Hi, I'm a web developer with a passion for creating beautiful websites.
                 <br>
                 My goal is to create clean, modern and responsive websites that will help you stand out from the crowd.
+                <br>
+                We can work together to create a website that meets your needs and exceeds your expectations.
             </p>
 
-            <!-- Youtube Video -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
+            <!-- Cartoon Image supposed to represent me -->
+            <img src="/images/Memoji.png" alt="Memoji">
 
-            </a>
+            <!-- Links to my socials -->
+            <ul>
+                <!-- LinkedIn -->
+                <li>
+                    <a href="https://www.linkedin.com/in/enoch-garoli/">
+                        <img src="/icons/linkedin.svg" alt="linkedin">
+                    </a>
+                </li>
+                <!-- Github -->
+                <li>
+                    <a href="https://github.com/enkiga/">
+                        <img src="/icons/github.svg" alt="github">
+                    </a>
+                </li>
+            </ul>
 
-            <!-- Work Section -->
-            <a name="work"></a>
-            <section>
-                <h1 style="color: blue; border-bottom: 1px solid black;">
-                    <strong>My Work</strong>
-                </h1>
+            <!-- CTA that leads to Contact Section -->
+            <a href="#contact">Let's talk</a>
+            <!-- CTA to get a copy of my resume -->
+            <a href="#">Get My Resume</a>
 
+
+
+            <div class="">
+                <!-- Youtube Video -->
+                <!-- To be removed -> Just here for project assignment -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+
+
+        </section>
+
+        <!-- Skills Section -->
+        <a name="skills"></a>
+        <section>
+            <h1 style="color: blue; border-bottom: 1px solid black;">
+                <strong>My Skills</strong>
+            </h1>
+
+
+
+            <!-- A table to show various tech skills -->
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th>Frontend</th>
+                    <th>Backend</th>
+                    <th>Database</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>PHP</td>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Python</td>
+                    <td>PostgreSQL</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Node.js</td>
+                    <td>MongoDB</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Express</td>
+                    <td>SQL Server</td>
+                </tr>
+            </table>
+           
+        </section>
+
+        <!-- Work Section -->
+        <a name="work"></a>
+        <section>
+            <h1 style="color: blue; border-bottom: 1px solid black;">
+                <strong>My Work</strong>
+            </h1>
+
+            <div>
+                <!-- Project Title -->
+                <h2 style="text-decoration: underline;">CarpoolingSystem</h2>
+                <!-- Project Info Section -->
                 <div>
-                    <h2 style="text-decoration: underline;">Project 1</h2>
-                    <p>Project 1 Description</p>
-                    <img src="images/project1.png" alt="Project 1" style="height: 250px; object-fit: contain;">
-                </div>
+                    <p>A carpooling management system developed in php using the laravel framework</p>
+                    <!-- Tech Stack List -->
+                    <ul>
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>Blade</li>
+                        <li>Tailwind CSS</li>
+                        <li>MySQL</li>
+                    </ul>
 
+                    <!-- CTA to view project source code -->
+                    <a href="https://github.com/enkiga/CarpoolingSystem">View Source Code</a>
+
+                    <!-- N/B Will link to project description page to show in detail (Somewhat a blog) -->
+
+                </div>
+                <img src="images/CarpoolSystem.png" alt="Project 1" style="height: 250px; object-fit: contain;">
+            </div>
+
+            <div>
+                <!-- Project Title -->
+                <h2 style="text-decoration: underline;">CuBot</h2>
+                <!-- Project Info Section -->
                 <div>
-                    <h2 style="text-decoration: underline;">Project 2</h2>
-                    <p>Project 2 Description</p>
-                    <img src="images/project2.png" alt="Project 2" style="height: 250px; object-fit: contain;">
+                    <p>An ML/DL Chat bot using Vanilla Python as Backend and HTML CSS JS as frontend.</p>
+                    <!-- Tech Stack List -->
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Tensorflow</li>
+                    </ul>
+
+                    <!-- CTA to view project source code -->
+                    <a href="https://github.com/enkiga/CuBot">View Source Code</a>
                 </div>
-            </section>
+                <img src="images/project2.png" alt="Project 2" style="height: 250px; object-fit: contain;">
+            </div>
+        </section>
 
+        <!-- Contact Section {To use HTML Forms on this Bit} -->
+        <a name="contact"></a>
+        <section>
+            <h1 style="color: blue; border-bottom: 1px solid black;">
+                <strong>Contact Me</strong>
+            </h1>
+            <p>Feel free to contact me at </p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
 
-            <!-- Resume Section -->
-            <a name="resume"></a>
-            <section>
-                <h1 style="color: blue; border-bottom: 1px solid black;">
-                    <strong>My Resume</strong>
-                </h1>
-                <!-- A table to show various resume info -->
-                <table style="border: 1px solid black;">
-                    <tr>
-                        <th style="border: 1px solid black;">Education</th>
-                        <td style="border: 1px solid black;">Bachelor's Degree in Computer Science</td>
-                    </tr>
-                    <tr>
-                        <th style="border: 1px solid black;">Experience</th>
-                        <td style="border: 1px solid black;">2 years of web development experience</td>
-                    </tr>
-                    <tr>
-                        <th style="border: 1px solid black;">Skills</th>
-                        <td style="border: 1px solid black;">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
 
-            <!-- Contact Section {To use HTML Forms on this Bit} -->
-            <a name="contact"></a>
-            <section>
-                <h1 style="color: blue; border-bottom: 1px solid black;">
-                    <strong>Contact Me</strong>
-                </h1>
-                <p>Feel free to contact me at </p>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <br>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <br>
-
-                    <button type="submit">Send</button>
-                </form>
-            </section>
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
 
     <footer style="background-color: aqua;">
