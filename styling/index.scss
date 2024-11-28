@@ -1,0 +1,11 @@
+$primaryColor: #333;
+$secondaryColor: #666;
+$textColor: #fff;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+

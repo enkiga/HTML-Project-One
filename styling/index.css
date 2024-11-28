@@ -1,0 +1,58 @@
+/* Create constants */
+:root {
+  /* Color Contants */
+  --primary-color: #333;
+  --secondary-color: #f4f4f4;
+  --text-color: var(--primary-color);
+  --link-color: #007bff;
+  /* Font Constants */
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --heading-size: 2rem;
+  --subheading-size: 1.5rem;
+  --paragraph-size: 1rem;
+  --link-size: 1rem;
+}
+
+body {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  > .navbar {
+    width: 100%;
+    padding: 0 20px;
+
+    > ul {
+      width: 100%;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      > li a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--secondary-color);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
