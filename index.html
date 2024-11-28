@@ -19,7 +19,6 @@
         <!-- Navbar Section -->
         <nav class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#work">Work</a></li>
@@ -31,66 +30,56 @@
     <main>
         <!-- About Section -->
         <a name="about"></a>
-        <section>
+        <section class="about">
+            <!-- Title of the Section -->
             <h1>
-                <strong>About Me</strong>
+                <strong>About Me<span>.</span></strong>
             </h1>
-            <h2>Garoli, Garoli Enoch</h2>
-            <p>Hi, I'm a web developer with a passion for creating beautiful websites.
-                <br>
-                My goal is to create clean, modern and responsive websites that will help you stand out from the crowd.
-                <br>
-                We can work together to create a website that meets your needs and exceeds your expectations.
-            </p>
+
+            <div class="about-content">
+                <h2>Hi, I am Garoli <span>Garoli Enoch</span> 🫡</h2>
+                <h3><span>Full</span>-Stack Developer</h3>
+                <p>Hi, I'm a web developer with a passion for creating beautiful websites. My goal is to create clean,
+                    modern and responsive websites that will help you stand out from the crowd. We can work together to
+                    create a website that meets your needs and exceeds your expectations.
+                </p>
+
+                <!-- Links to my socials -->
+                <ul>
+                    <!-- LinkedIn -->
+                    <li>
+                        <a href="https://www.linkedin.com/in/enoch-garoli/">
+                            <img src="/icons/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <!-- Github -->
+                    <li>
+                        <a href="https://github.com/enkiga/">
+                            <img src="/icons/github.svg" alt="github">
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- CTA that leads to Contact Section -->
+                <a href="#contact">Let's talk</a>
+                <!-- CTA to get a copy of my resume (Plan to move it onto nav) -->
+                <a href="#">Get My Resume</a>
+            </div>
 
             <!-- Cartoon Image supposed to represent me -->
             <img src="/images/Memoji.png" alt="Memoji">
-
-            <!-- Links to my socials -->
-            <ul>
-                <!-- LinkedIn -->
-                <li>
-                    <a href="https://www.linkedin.com/in/enoch-garoli/">
-                        <img src="/icons/linkedin.svg" alt="linkedin">
-                    </a>
-                </li>
-                <!-- Github -->
-                <li>
-                    <a href="https://github.com/enkiga/">
-                        <img src="/icons/github.svg" alt="github">
-                    </a>
-                </li>
-            </ul>
-
-            <!-- CTA that leads to Contact Section -->
-            <a href="#contact">Let's talk</a>
-            <!-- CTA to get a copy of my resume (Plan to move it onto nav) -->
-            <a href="#">Get My Resume</a>
-
-
-
-            <div class="">
-                <!-- Youtube Video -->
-                <!-- To be removed -> Just here for project assignment -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </div>
-
 
         </section>
 
         <!-- Skills Section -->
         <a name="skills"></a>
-        <section>
+        <section class="skills">
             <h1>
-                <strong>My Skills</strong>
+                <strong>My Skills <span>.</span></strong>
             </h1>
 
-
-
             <!-- A table to show various tech skills -->
-            <table>
+            <table class="skills-table">
                 <tr>
                     <th>Frontend</th>
                     <th>Backend</th>
@@ -122,16 +111,16 @@
 
         <!-- Work Section -->
         <a name="work"></a>
-        <section>
+        <section class="work">
             <h1>
-                <strong>My Work</strong>
+                <strong>My Work <span>.</span></strong>
             </h1>
 
-            <div>
+            <div class="work-item">
                 <!-- Project Title -->
                 <h2>CarpoolingSystem</h2>
                 <!-- Project Info Section -->
-                <div>
+                <div class="item-content">
                     <p>A carpooling management system developed in php using the laravel framework</p>
                     <!-- Tech Stack List -->
                     <ul>
@@ -151,11 +140,11 @@
                 <img src="images/CarpoolSystem.png" alt="Project 1">
             </div>
 
-            <div>
+            <div class="work-item">
                 <!-- Project Title -->
                 <h2>CuBot</h2>
                 <!-- Project Info Section -->
-                <div>
+                <div class="item-content">
                     <p>An ML/DL Chat bot using Vanilla Python as Backend and HTML CSS JS as frontend.</p>
                     <!-- Tech Stack List -->
                     <ul>
@@ -175,9 +164,9 @@
 
         <!-- Contact Section {To use HTML Forms on this Bit} -->
         <a name="contact"></a>
-        <section>
+        <section class="contact">
             <h1>
-                <strong>Contact Me</strong>
+                <strong>Contact Me <span>.</span></strong>
             </h1>
             <p>Feel free to leave a note </p>
             <form action="#" method="post">
@@ -198,8 +187,8 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2020 Enoch Garoli</p>
+    <footer class="footer">
+        <p>&copy; 2024 Enoch Garoli</p>
     </footer>
 </body>
 
