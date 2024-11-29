@@ -90,13 +90,10 @@ a {
 }
 
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: inline;
 
   > h1 {
-    width: 100%;
+    
     text-align: center;
 
     span {
@@ -106,6 +103,7 @@ a {
 
   > .about-content {
     width: 60%;
+    display: block;
 
     > h2 {
       color: var(--primary-color);
@@ -190,11 +188,6 @@ a {
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   > h1 {
     width: 100%;
     text-align: center;
@@ -209,7 +202,7 @@ a {
     width: 100%;
 
     tr {
-      display: flex;
+      display: block;
       border: 1px solid var(--primary-color);
 
       &:hover {
@@ -235,10 +228,7 @@ a {
 }
 
 .work {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: inline;
 
   > h1 {
     width: 100%;
@@ -250,9 +240,7 @@ a {
   }
 
   > .work-item {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+    display: block;
     width: 45%;
     margin: 20px 10px;
 
@@ -266,10 +254,7 @@ a {
 
     .item-content {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
+      display: block;
       padding: 20px 0;
       margin: 30px 10px;
 
@@ -281,7 +266,7 @@ a {
       }
 
       > ul {
-        display: flex;
+        display: block;
         gap: 1rem;
         list-style: none;
         padding: 0;
@@ -326,8 +311,7 @@ a {
 }
 
 .contact {
-  display: flex;
-  flex-direction: column;
+  display: block;
 
   > h1 {
     text-align: center;
@@ -347,10 +331,7 @@ a {
 
   > form {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     margin-top: 20px;
 
     > label {
