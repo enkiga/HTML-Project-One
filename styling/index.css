@@ -51,6 +51,21 @@ body {
   }
 }
 
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.2rem 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  bottom: 0;
+
+  & p {
+    font-size: 1.2rem;
+  }
+}
+
 main {
   margin-top: 5rem;
   padding: 1rem;
@@ -245,7 +260,7 @@ main {
     & .item-content {
       color: var(--text-color);
       text-align: center;
-      
+
       & p {
         color: var(--text-color);
         text-align: left;
@@ -297,7 +312,75 @@ main {
       object-fit: contain;
       height: auto;
       margin: 1rem auto;
-      
+    }
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  margin: 2rem 0;
+  padding: 1rem;
+
+  & h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    & span {
+      color: var(--primary-color);
+      font-size: 2.1rem;
+    }
+  }
+
+  & p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  & form {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+
+    & input,
+    & textarea {
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      border: none;
+      border-bottom: 2px solid var(--primary-color);
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      width: 100%;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & input[type="submit"] {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 0.7rem 2rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--text-color);
+        padding-bottom: 0.3rem;
+        border-bottom: 3px solid var(--text-color);
+        transition: all 0.3s;
+      }
     }
   }
 }
